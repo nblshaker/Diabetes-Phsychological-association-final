@@ -1,0 +1,50 @@
+{
+  "non-DP path reproduces step 02 exactly (depression)": {
+    "passed": true,
+    "detail": "pooled AUC 0.657575 vs original 0.657575; max diff 0.0e+00"
+  },
+  "non-DP path reproduces step 02 exactly (diabetes)": {
+    "passed": true,
+    "detail": "pooled AUC 0.748806 vs original 0.748806; max diff 0.0e+00"
+  },
+  "per-patient gradient equals numerical gradient": {
+    "passed": true,
+    "detail": ""
+  },
+  "clipped per-patient norm <= C": {
+    "passed": true,
+    "detail": "max 0.7000, 60% were clipped"
+  },
+  "noise std = sigma*C/(q*n)": {
+    "passed": true,
+    "detail": "empirical 0.00501 vs 0.00500"
+  },
+  "Poisson sampling rate = q": {
+    "passed": true,
+    "detail": "0.0802"
+  },
+  "accountant hits target eps=0.5": {
+    "passed": true,
+    "detail": "sigma=16.879 -> eps=0.500"
+  },
+  "accountant hits target eps=1": {
+    "passed": true,
+    "detail": "sigma=8.958 -> eps=1.000"
+  },
+  "accountant hits target eps=4": {
+    "passed": true,
+    "detail": "sigma=2.689 -> eps=3.999"
+  },
+  "accountant hits target eps=8": {
+    "passed": true,
+    "detail": "sigma=1.609 -> eps=7.995"
+  },
+  "epsilon grows with steps, shrinks with noise": {
+    "passed": true,
+    "detail": ""
+  },
+  "association scripts (03, 05) contain no gradient descent / DP code": {
+    "passed": true,
+    "detail": "they use closed-form logistic fits + meta-analysis"
+  }
+}
